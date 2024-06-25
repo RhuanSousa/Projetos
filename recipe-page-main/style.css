@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --font1: 'Outfit', 'sans-serif';
+    --font2: 'Young Serif', 'sans-serif';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Eggshell);
+}
+
+main {
+    margin: 10%;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: var(--RoseWhite);
+    font-family: var(--font1);
+}
+
+main > img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+main h1 {
+    font-family: var(--font2);
+    font-weight: 400;
+    color: var(--DarkCharcoal);
+    margin-bottom: 20px;
+}
+
+.Preparation h3 {
+    padding-left: 1rem;
+    color: var(--DarkRaspberry);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Preparation ul {
+    padding-left: 3rem;
+    list-style: ;
+}
