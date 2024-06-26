@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --font: 'Inter';
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font);
+    font-size: 14px;
+    background-color: var(--OffBlack);
+}
+
+#card {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    height: 620px;
+    transform: translate(-50%, -50%);
+    background-color: var(--DarkGrey);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+#card > img {
+    border-radius: 50%;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#card > h1 {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+#card > h2 {
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#card > p {
+    color: white;
+    font-weight: 400;
+    padding: 15px;
+}
+
+#links {
+    display: grid;
+}
+
+#links a {
+    color: var(--White);
+    font-weight: 600;
+    background-color: var(--Grey);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+#links a:hover {
+    background-color: var(--Green);
+    color: var(--Grey);
+    font-weight: 900;
+}
+
+#header 
