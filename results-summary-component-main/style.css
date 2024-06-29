@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+/* Primary */
+
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+
+/* Gradients */
+
+--Lightslateblue: hsl(252, 100%, 67%);
+--Lightroyalblue: hsl(241, 81%, 54%);
+
+--Violetblue: hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+
+/* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+
+/* Font */
+
+--Font: 'Hanken Grotesk'
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--Font);
+    font-size: 18px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    color: var(--White);
+}
+
+.card p {
+    max-width: 250px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.circle span {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+
