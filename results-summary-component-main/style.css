@@ -52,7 +52,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .card {
@@ -113,64 +113,56 @@ main {
 }
 
 .reaction {
-    padding: 10px; 
-    position: relative; 
     color: var(--Lightred);
 }
 
 .reaction::before {
     content: url(assets/images/icon-reaction.svg);
-    position: absolute;
-    left: -10px;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 .memory {
     padding: 10px; 
-    position: relative; 
     color: var(--Orangeyyellow);
 }
 
 .memory::before {
     content: url(assets/images/icon-memory.svg);
-    position: absolute;
-    left: 10px;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 .verbal {
-    padding: 10px; 
-    position: relative; 
+    padding: 10px;  
     color: var(--Greenteal);
 }
 
 .verbal::before {
     content: url(assets/images/icon-verbal.svg);
-    position: absolute;
-    left: 10px;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 .visual {
-    padding: 10px; 
-    position: relative; 
     color: var(--Violetblue);
 }
 
 .visual::before {
     content: url(assets/images/icon-visual.svg);
-    position: absolute;
-    left: 10px;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 table {
     width: 100%;
-    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    position: relative;
+    padding: 25px;
+}
+
+td::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 20px;
 }
 
 
