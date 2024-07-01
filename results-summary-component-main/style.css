@@ -52,6 +52,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .card {
@@ -63,9 +64,14 @@ main {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 25px;
     padding: 30px;
-    width: 400px;
-    height: 500px;
+    width: 390px;
+    height: 520px;
     color: var(--White);
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .card p {
@@ -77,16 +83,96 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
 
 .circle span {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 700;
 }
+
+.circle p {
+    color: var(--Lightlavender);
+}
+
+.summary button {
+    background-color: var(--Darkgrayblue);
+    padding: 15px 100px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.summary button > a {
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.reaction {
+    padding: 10px; 
+    position: relative; 
+    color: var(--Lightred);
+}
+
+.reaction::before {
+    content: url(assets/images/icon-reaction.svg);
+    position: absolute;
+    left: -10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.memory {
+    padding: 10px; 
+    position: relative; 
+    color: var(--Orangeyyellow);
+}
+
+.memory::before {
+    content: url(assets/images/icon-memory.svg);
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.verbal {
+    padding: 10px; 
+    position: relative; 
+    color: var(--Greenteal);
+}
+
+.verbal::before {
+    content: url(assets/images/icon-verbal.svg);
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.visual {
+    padding: 10px; 
+    position: relative; 
+    color: var(--Violetblue);
+}
+
+.visual::before {
+    content: url(assets/images/icon-visual.svg);
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 
 
 
