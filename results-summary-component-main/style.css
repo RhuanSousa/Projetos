@@ -9,38 +9,31 @@
 }
 
 :root {
-/* Primary */
+    /* Colors */
 
---Lightred: hsl(0, 100%, 67%);
---Orangeyyellow: hsl(39, 100%, 56%);
---Greenteal: hsl(166, 100%, 37%);
---Cobaltblue: hsl(234, 85%, 45%);
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
 
-/* Gradients */
+    /* Gradients */
 
---Lightslateblue: hsl(252, 100%, 67%);
---Lightroyalblue: hsl(241, 81%, 54%);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
 
---Violetblue: hsla(256, 72%, 46%, 1);
---Persianblue: hsla(241, 72%, 46%, 0);
-
-/* Neutral */
-
---White: hsl(0, 0%, 100%);
---Paleblue: hsl(221, 100%, 96%);
---Lightlavender: hsl(241, 100%, 89%);
---Darkgrayblue: hsl(224, 30%, 27%);
-
-/* Font */
-
---Font: 'Hanken Grotesk'
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
 }
 
 body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    font-family: var(--Font);
+    font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
 }
 
@@ -52,19 +45,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
     border-radius: 25px;
     padding: 30px;
-    width: 390px;
+    width: 370px;
     height: 520px;
     color: var(--White);
 }
@@ -75,6 +68,7 @@ main {
 }
 
 .card p {
+    color: var(--Lightlavender);
     max-width: 250px;
 }
 
@@ -83,7 +77,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    background-image: linear-gradient(var(--Violetblue), var(--Persianblue));
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -99,11 +93,13 @@ main {
 }
 
 .summary button {
+    margin-top: 20px;
     background-color: var(--Darkgrayblue);
     padding: 15px 100px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
+    transition: 1s ease-in;
 }
 
 .summary button > a {
@@ -112,59 +108,71 @@ main {
     font-weight: 700;
 }
 
+.summary button:hover {
+    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    transition: 1s all ease-in-out;
+}
+
+.summary h1 {
+    font-size: 1.5rem;
+    color: var(--Darkgrayblue);
+}
+
+table {
+    color: var(--Lightlavender);
+    height: 300px;
+    width: 100%;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+
+table strong {
+    color: var(--Darkgrayblue);
+}
+
 .reaction {
+    position: relative;
     color: var(--Lightred);
 }
 
 .reaction::before {
+    position: absolute;
+    left: -30px;
     content: url(assets/images/icon-reaction.svg);
 }
 
 .memory {
-    padding: 10px; 
+    position: relative;
     color: var(--Orangeyyellow);
 }
 
 .memory::before {
+    position: absolute;
+    left: -30px;
     content: url(assets/images/icon-memory.svg);
 }
 
 .verbal {
-    padding: 10px;  
+    position: relative;
     color: var(--Greenteal);
 }
 
 .verbal::before {
+    position: absolute;
+    left: -30px;
     content: url(assets/images/icon-verbal.svg);
 }
 
 .visual {
+    position: relative;
     color: var(--Violetblue);
 }
 
 .visual::before {
     content: url(assets/images/icon-visual.svg);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    position: relative;
-    padding: 25px;
-}
-
-td::before {
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-100%, -50%);
-    width: 20px;
-    height: 20px;
+    left: -30px;
 }
-
 
 
 
