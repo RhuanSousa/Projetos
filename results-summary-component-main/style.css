@@ -78,7 +78,10 @@ body {
     font-weight: 700;
 }
 
-
+.results {
+    display: grid;
+    margin: auto;
+}
 
 table {
     margin-top: 20px;
@@ -86,16 +89,8 @@ table {
 }
 
 table th {
-    display: block;
-    margin-bottom: 20px;
     font-size: 1.3rem;
     color: var(--Darkgrayblue);
-}
-
-table td {
-    padding-left: 20px;
-    margin-left: 30px;
-    margin-bottom: 50px;
 }
 
 .reaction {
