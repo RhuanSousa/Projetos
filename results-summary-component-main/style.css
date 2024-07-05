@@ -29,72 +29,88 @@
 }
 
 body {
+    position: relative;
     width: 100vw;
     height: 100vh;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
 }
 
-.card {
+main {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-around;
-    height: 400px;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 25px;
-    border-radius: 0 0 35px 35px;
-    color: var(--Lightlavender);
-    background: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    gap: 35px;
 }
 
-.card > h1 {
-    font-size: 1.3rem;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    border-radius: 25px;
+    padding: 30px;
+    width: 370px;
+    height: 520px;
+    color: var(--Lightlavender);
+}
+
+.card h1 {
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
-.card > h2 {
-    margin-bottom: -20px;
-    color: var(--White);
-}
-
-.card > p {
-    max-width: 300px;
+.card p {
+    color: var(--Lightlavender);
+    max-width: 250px;
 }
 
 .circle {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background: linear-gradient(var(--Violetblue), var(--Persianblue));
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(var(--Violetblue), var(--Persianblue));
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
-.circle > span {
+.circle span {
     color: var(--White);
-    font-size: 3.5em;
+    font-size: 4.5rem;
     font-weight: 700;
 }
 
+.circle p {
+    color: var(--Lightlavender);
+}
+
 .results {
-    margin: 30px;
     display: grid;
+    gap: 20px;
 }
 
 .results h1 {
-    color: var(--Darkgrayblue);
-    font-size: 20px;
+    font-size: 25px;
+    color: var(--Darkgrayblue)
 }
 
 table {
-    margin-top: 20px;
     border-collapse: collapse;
+    color: var(--Lightlavender);
+    width: 290px;
 }
 
-table th {
-    font-size: 1.3rem;
+td strong {
     color: var(--Darkgrayblue);
 }
 
@@ -158,6 +174,48 @@ button:hover {
     background: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
 }
 
+@media screen and (max-width: 375px) {
 
+    main {
+        display: block;
+    }
 
+    .card {
+        height: 400px;
+        justify-content: space-between;
+        border-radius: 0 0 35px 35px;
+    }
+    
+    .card>h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    .card>h2 {
+        margin-bottom: -20px;
+        color: var(--White);
+    }
+    
+    .card>p {
+        max-width: 300px;
+    }
+    
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circle>span {
+        font-size: 3.5em;
+    }
+    
+    .results {
+        margin: 25px 35px;
+    }
+    
+    .results h1 {
+        color: var(--Darkgrayblue);
+        font-size: 20px;
+    }
 
+}
