@@ -79,11 +79,13 @@ body {
 }
 
 .results {
+    margin: 30px;
     display: grid;
 }
 
 .results h1 {
-    color: red;
+    color: var(--Darkgrayblue);
+    font-size: 20px;
 }
 
 table {
@@ -142,23 +144,19 @@ table th {
 
 button {
     margin-top: 20px;
-    background-color: var(--Darkgrayblue);
-    padding: 15px 100px;
+    padding: 15px;
     border-radius: 30px;
     border: none;
-    cursor: pointer;
+    background-color: var(--Darkgrayblue);
     color: var(--White);
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 button:hover {
     background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
-
 }
 
-.attribution {
-    display: none;
-}
 
 
