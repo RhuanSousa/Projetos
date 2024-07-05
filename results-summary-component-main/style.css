@@ -80,7 +80,10 @@ body {
 
 .results {
     display: grid;
-    margin: auto;
+}
+
+.results h1 {
+    color: red;
 }
 
 table {
