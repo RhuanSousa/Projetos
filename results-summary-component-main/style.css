@@ -43,9 +43,9 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 25px;
-    border-radius: 0px 0px 35px 35px;
+    border-radius: 0 0 35px 35px;
     color: var(--Lightlavender);
-    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    background: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
 }
 
 .card > h1 {
@@ -66,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(var(--Violetblue), var(--Persianblue));
+    background: linear-gradient(var(--Violetblue), var(--Persianblue));
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -155,8 +155,9 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    background: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
 }
+
 
 
 
