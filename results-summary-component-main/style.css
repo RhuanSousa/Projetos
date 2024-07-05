@@ -1,11 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 :root {
@@ -30,149 +29,138 @@
 }
 
 body {
-    position: relative;
     width: 100vw;
     height: 100vh;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
 }
 
-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-}
-
 .card {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    height: 400px;
     align-items: center;
+    flex-direction: column;
     text-align: center;
+    padding: 25px;
+    border-radius: 0px 0px 35px 35px;
+    color: var(--Lightlavender);
     background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
-    border-radius: 25px;
-    padding: 30px;
-    width: 370px;
-    height: 520px;
-    color: var(--White);
 }
 
-.card h1 {
-    font-size: 1.5rem;
+.card > h1 {
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
-.card p {
-    color: var(--Lightlavender);
-    max-width: 250px;
+.card > h2 {
+    margin-bottom: -20px;
+    color: var(--White);
+}
+
+.card > p {
+    max-width: 300px;
 }
 
 .circle {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
     background-image: linear-gradient(var(--Violetblue), var(--Persianblue));
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
-.circle span {
-    font-size: 4.5rem;
+.circle > span {
+    color: var(--White);
+    font-size: 3.5em;
     font-weight: 700;
 }
 
-.circle p {
-    color: var(--Lightlavender);
+
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-.summary button {
+table th {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--Darkgrayblue);
+}
+
+table td {
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.reaction {
+    color: var(--Lightred);
+}
+
+.reaction::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    content: url(assets/images/icon-reaction.svg);
+}
+
+.memory {
+    color: var(--Orangeyyellow);
+}
+
+.memory::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    content: url(assets/images/icon-memory.svg);
+}
+
+.verbal {
+    color: var(--Greenteal);
+}
+
+.verbal::before {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    content: url(assets/images/icon-verbal.svg);
+}
+
+.visual {
+    color: var(--Violetblue);
+}
+
+.visual::before {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    content: url(assets/images/icon-visual.svg);
+}
+
+button {
     margin-top: 20px;
     background-color: var(--Darkgrayblue);
     padding: 15px 100px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    transition: 1s ease-in;
-}
-
-.summary button > a {
     color: var(--White);
     font-size: 1rem;
     font-weight: 700;
 }
 
-.summary button:hover {
+button:hover {
     background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
-    transition: 1s all ease-in-out;
+
 }
 
-.summary h1 {
-    font-size: 1.5rem;
-    color: var(--Darkgrayblue);
+.attribution {
+    display: none;
 }
-
-table {
-    color: var(--Lightlavender);
-    height: 300px;
-    width: 100%;
-    margin-left: 50px;
-    border-collapse: collapse;
-}
-
-table strong {
-    color: var(--Darkgrayblue);
-}
-
-.reaction {
-    position: relative;
-    color: var(--Lightred);
-}
-
-.reaction::before {
-    position: absolute;
-    left: -30px;
-    content: url(assets/images/icon-reaction.svg);
-}
-
-.memory {
-    position: relative;
-    color: var(--Orangeyyellow);
-}
-
-.memory::before {
-    position: absolute;
-    left: -30px;
-    content: url(assets/images/icon-memory.svg);
-}
-
-.verbal {
-    position: relative;
-    color: var(--Greenteal);
-}
-
-.verbal::before {
-    position: absolute;
-    left: -30px;
-    content: url(assets/images/icon-verbal.svg);
-}
-
-.visual {
-    position: relative;
-    color: var(--Violetblue);
-}
-
-.visual::before {
-    content: url(assets/images/icon-visual.svg);
-    position: absolute;
-    left: -30px;
-}
-
 
 
