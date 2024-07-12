@@ -5,7 +5,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -90,6 +89,7 @@ main {
 }
 
 #card button a  {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     color: var(--White);
