@@ -20,20 +20,24 @@
 }
 
 body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     font-family: var(--bodyfont);
-    padding: 5%;
     background-color: var(--Cream);
 }
 
 main {
+    max-width: 395px;
     background-color: var(--White);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #card {
-    padding: 30px;
+    padding: 25px 30px;
 }
 
 #img picture img {
@@ -58,10 +62,10 @@ main {
 }
 
 #card p {
+    margin-bottom: 1.5em;
     font-weight: 500;
     color: var(--Darkgrayishblue);
-    line-height: 1.5em;
-    margin-bottom: 1.5em;
+    line-height: 30px;
 }
 
 #price span {
@@ -100,4 +104,38 @@ main {
     vertical-align: middle;
     padding-right: 10px;
     content: url(images/icon-cart.svg);
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        max-width: 100vw;
+        display: flex;
+        gap: 10px;
+    }
+
+    #img picture img {
+        height: 560px;
+        max-width: 400px;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #card {
+        padding: 40px 30px;
+        max-width: 340px;
+    }
+
+    #card h2 {
+        margin-bottom: 20px;
+    }
+    
+    #card h1 {
+        margin-bottom: 1em;
+        max-width: 270px;
+    }
+
+    #price {
+        margin-bottom: 1em;
+    }
+
 }
