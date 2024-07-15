@@ -30,6 +30,7 @@ body {
 
 main {
     background-color: var(--White);
+    box-shadow: 4px 4px 10px hsla(219, 15%, 55%, 0.39);
     height: 497px;
     width: 320px;
     padding: 16px;
