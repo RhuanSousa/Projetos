@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Verydarkblue-mainBG: hsl(217, 54%, 11%);
+    --Verydarkblue-cardBG: hsl(216, 50%, 16%);
+    --Verydarkblue-line: hsl(215, 32%, 27%);
+
+    --White: hsl(0, 0%, 100%);
+    --Bodyfont: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--Bodyfont);
+    font-size: 18px;
+    background-color: var(--Verydarkblue-mainBG);
+}
+
+main {
+    background-color: var(--Verydarkblue-cardBG);
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+.card-img {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.card-img div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.card-img div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card-img div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card h1 a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--White);
+}
+
+.card h1 a:hover {
+    color: var(--Cyan);
+}
+
+.card p {
+    color: var(--Softblue);
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Verydarkblue-line);
+}
+
+.values span {
+    color: var(--Cyan);
+    font-size: 16px;
+}
+
+.values p {
+    color: var(--Softblue);
+    font-weight: 300;
+}
+
+.values p::before {
+    content: url(images/icon-clock.svg);
+    display: inline;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.values span::before {
+    content: url(images/icon-ethereum.svg);
+    display: inline;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.avatar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.avatar img {
+    width: 35px;
+    margin-right: 10px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.avatar p {
+    font-weight: 300;
+    color: var(--Softblue);
+}
+
+.avatar p a {
+    font-weight: 400;
+    color: var(--White);
+}
+
+.avatar p a:hover {
+    color: var(--Cyan);
+}
