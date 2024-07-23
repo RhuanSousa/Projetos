@@ -21,8 +21,6 @@
 
 }
 
-/* Weights: 500, 700, 900 */
-
 body {
     display: flex;
     flex-flow: column;
@@ -36,7 +34,7 @@ body {
 }
 
 main {
-    width: 370px;
+    width: 380px;
     height: 630px;
     background-color: white;
     border-radius: 20px;
@@ -46,7 +44,7 @@ main {
 .card {
     display: block;
     margin: auto;
-    max-width: 310px;
+    padding: 0 35px;
 }
 
 .card-img > img {
@@ -56,11 +54,8 @@ main {
     margin-bottom: 40px;
 }
 
-.card-text {
-    text-align: center;
-}
-
 .card-text h1 {
+    text-align: center;
     color: var(--Darkblue);
     font-size: 1.5em;
     font-weight: 900;
@@ -68,6 +63,7 @@ main {
 }
 
 .card-text p {
+    text-align: center;
     display: block;
     margin: auto;
     color: var(--Desaturatedblue);
@@ -152,7 +148,7 @@ main {
     }
 
     .card {
-        max-width: 360px;
+        padding: 0 50px;
     }
 
     .card h1 {
