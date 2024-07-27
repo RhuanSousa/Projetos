@@ -9,8 +9,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [here]()
-- Live Site URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/challenge-training-omelette-recipe-page-oRBOyr_RsW)
+- Live Site URL: [here](https://rhuansousa.github.io/Projetos/01%20-%20recipe-page-main)
 
 ## My process
 
