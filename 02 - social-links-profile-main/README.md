@@ -10,7 +10,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [here](https://www.frontendmentor.io/solutions/complete-social-media-profile-challenge-8Rz-T37EyV)
-- Live Site URL: [here](https://rhuansousa.github.io/Projetos/01%20-%20recipe-page-main)
+- Live Site URL: [here](https://rhuansousa.github.io/Projetos/02%20-%20social-links-profile-main/)
 
 ## My process
 
