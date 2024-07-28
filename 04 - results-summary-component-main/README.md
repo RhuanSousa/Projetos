@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Blog preview card on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
+This is a solution to the [Results summary component on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
 
 ### Screenshot
 
@@ -10,7 +10,7 @@ This is a solution to the [Blog preview card on Frontend Mentor](https://www.fro
 ### Links
 
 - Solution URL: [here](https://www.frontendmentor.io/solutions/challenge-blog-preview-card-completed-7AUxXxemX7)
-- Live Site URL: [here](https://rhuansousa.github.io/Projetos/03%20-%20blog-preview-card-main/)
+- Live Site URL: [here](https://rhuansousa.github.io/Projetos/04%20-%20results-summary-component-main/)
 
 ## My process
 
