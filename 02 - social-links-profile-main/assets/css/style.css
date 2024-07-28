@@ -19,68 +19,68 @@
 }
 
 body {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     font-family: var(--font);
     font-size: 14px;
     background-color: var(--OffBlack);
 }
 
-#card {
-    position: absolute;
+.card {
     text-align: center;
-    top: 50%;
-    left: 50%;
-    width: 360px;
-    height: 620px;
-    transform: translate(-50%, -50%);
     background-color: var(--DarkGrey);
     border-radius: 10px;
-    padding: 35px;
+    padding: 25px;
+    width: 330px;
 }
 
-#card > img {
+.card > img {
     border-radius: 50%;
-    width: 30%;
-    margin-bottom: 20px;
+    width: 32%;
 }
 
-#card > h1 {
+.card > h1 {
     color: var(--White);
     font-weight: 500;
     font-size: 1.5rem;
-    margin: 5px 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-#card > h2 {
+.card > h2 {
     color: var(--Green);
     font-weight: 600;
-    font-size: 14px;
-    padding-bottom: 20px;
+    font-size: 0.87rem;
+    margin-bottom: 30px;
 }
 
-#card > p {
+.card > p {
     color: white;
     font-weight: 400;
-    padding: 15px;
+    margin-bottom: 15px;
 }
 
-#links {
+.links {
     display: grid;
 }
 
-#links a {
+.links a {
     color: var(--White);
     font-weight: 600;
     background-color: var(--Grey);
     padding: 15px;
-    margin: 10px 0;
+    margin: 7px 0;
     border-radius: 10px;
 }
 
-#links a:hover {
+.links a:hover {
     background-color: var(--Green);
     color: var(--Grey);
     font-weight: 900;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
