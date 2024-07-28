@@ -10,7 +10,7 @@ This is a solution to the [Blog preview card on Frontend Mentor](https://www.fro
 ### Links
 
 - Solution URL: [here](https://www.frontendmentor.io/solutions/challenge-blog-preview-card-completed-7AUxXxemX7)
-- Live Site URL: [here](https://rhuansousa.github.io/Projetos/02%20-%20social-links-profile-main/)
+- Live Site URL: [here](https://rhuansousa.github.io/Projetos/03%20-%20blog-preview-card-main/)
 
 ## My process
 
